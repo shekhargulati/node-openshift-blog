@@ -1,0 +1,15 @@
+<% layout('../layout') -%>
+<h1><%= title %></h1>
+
+	<% for(var i = 0 ;i<docs.length;i++){ %>
+		<dl class="dl-horizontal">
+			<dt>Blog Title</dt>
+			<dd><%= docs[i].title %></dd>
+			<dt>Blog Description</dt>
+			<dd>
+				<p class="small"><%= docs[i].description %></p>
+			</dd>
+		</dl>
+	<%}%>
+
+
